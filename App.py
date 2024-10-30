@@ -6,6 +6,26 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
+st.markdown("""
+    <style>
+    .titulo {
+        font-family: 'Lexend', sans-serif;
+        font-size: 36px;
+        text-align: center;
+    }
+    .subtitulo {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        text-align: center;
+    }
+    .contenido {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        text-align: justify;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # App
 def predictDigit(image):
     model = tf.keras.models.load_model("model/handwritten.h5")
