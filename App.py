@@ -46,6 +46,8 @@ def predictDigit(image):
 st.title('Reconocimiento de Dígitos escritos a mano')
 st.subheader("Dibuja el digito en el panel  y presiona  'Predecir'")
 
+st.image('Yoru - Reconocimiento de dígitos.png', use_column_width=True)
+
 # Add canvas component
 # Specify canvas parameters in application
 drawing_mode = "freedraw"
